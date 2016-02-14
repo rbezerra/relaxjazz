@@ -1,1 +1,48 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <title>Relax to the Jazz!!!</title>
+</head>
+<body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '601995513291576',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+  <audio autoplay loop>
+    <source src="background-music.ogg">
+    <source src="background-music.mp3">
+  </audio>
+  <audio autoplay loop>
+    <source src="background-rain.ogg">
+    <source src="background-rain.mp3">
+  </audio>
+
+  <footer>
+
+    <div class="social-media">
+      <a id="share-fb-button" title="Compartilhar no Facebook" href=""><i class="fa fa-facebook fa-2x"></i></a> <i class="fa fa-twitter fa-2x"></i>
+    </div>
+
+    <a href="https://www.youtube.com/watch?v=7-RyS_jd5QE" target="_blank">The Nearness of You - Hoagy Carmichael (Executada por Daniel Vissoto) <i class="fa fa-music"></i> </a>
+    <br>
+    Criado por <a href="http://github.com/rbezerra/relaxjazz" target="_blank">Ramon Bezerra <i class="fa fa-github-alt"></i> </a>
+  </footer>
+</body>
+</html>

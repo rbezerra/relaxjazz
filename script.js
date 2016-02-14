@@ -11,3 +11,24 @@ fbb.onclick = function(e){
   });
 }
 
+var twb = document.getElementById('share-tw-button');
+
+twb.onclick = function(e){
+  var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+  var width  = 575,
+      height = 400,
+      left   = (w  - width)  / 2,
+      top    = (h - height) / 2,
+      url    = this.href,
+      opts   = 'status=1' +
+               ',width='  + width  +
+               ',height=' + height +
+               ',top='    + top    +
+               ',left='   + left;
+
+    window.open(url, 'twitter', opts);
+
+    return false;
+}
+
